@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-weight: 400;
+   line-height: 1.7rem;
+}
+.container {
+    // max-width: 980px;
+    max-width: calc(980vw / 19.2);
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+.contact {
+    background: url('../img/map.png') right bottom / auto no-repeat;
+    background-color: #222;
+    padding: 110px 0 115px;
+    color: #fff;
+}
+form {
+    margin-top: 75px;
+    .flex-row {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .flex-column {
+        width: 50%;
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        input,
+        textarea {
+            padding: 20px;
+            font-size: 1rem;
+            color: #333;
+            border-radius: 5px;
+            &::placeholder {
+                font-size: 1rem;
+                color: #bbb;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        textarea {
+            width: 100%;
+            height: 100%;
+        }
+        button {
+            color: #fed136;
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+.header {
+    margin: 10px 230px;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    // @media(max-width: 768px) {
+    //     max-width: 100%;
+    // }
+    .logo,
+    .menu-list {
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+    .logo {
+        font-family: 'Dancing Script', sans-serif;
+    }
+    .menu {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .menu-link {
+        color: #000;
+        text-decoration: none;
+    }
+    .menu-list {
+        display: flex;
+        color: #000;
+    }
+    .menu-item {
+        padding-left: 55px;
+        list-style: none;
+    }
+    .logo,
+    .home {
+        color: #fed136;
+    }
+}
+.main {
+    margin-bottom: 100px;
+    .services {
+        padding: 120px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .mol {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .proin {
+        font-size: 14px;
+        color: #777;
+    } 
+    .center-list {
+        display: flex;
+        padding: 0 100px;
+        list-style: none;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .center-link {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .lol {
+        color: #777;
+    }
+}
+
